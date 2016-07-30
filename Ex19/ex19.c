@@ -184,6 +184,11 @@ int process_input(Map *game)
 			if(game->location->west) printf("WEST\n");
 			break;
 
+		case '?':
+			printf("The valid commands are: n,s,e, and w to move north, south, east, and west respectively\n");
+			printf("                        a to attack, and l to list possible directions to move.\n");
+			break;
+
 		default:
 			printf("What?: %d\n", ch);
 	}
